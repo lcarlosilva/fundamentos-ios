@@ -12,12 +12,13 @@
   5. Primeiro contato (Hello, World!)
 
 2. <a href=''>Orientação objeto no iOS</a>
-  1. Arquivos da classe (.h, .m)
-  2. Classes, Property, Synthetize
-  3. Delegate, Protocol, Enums
-  4. Construtores, Multiplos parâmetros, Métodos privados
-  5. Um pouco de Foundation (NSString, NSArray, NSMutableArray)
-  6. Trabalhanco com o Console
+  1. Classes, Property, Synthetize, arquivos .h e .m
+  2. id, NULL/nil/Nil, Protocol, Enums
+  3. Construtores, Multiplos parâmetros, Métodos privados, Métodos como parâmetros
+  4. Categories (NSString+Utils.h)
+  4. Um pouco de Foundation (NSString, NSArray, NSMutableArray)
+  5. Comparando objetos
 
-3. <a href=''> </a>  
+3. <a href='Iniciando o desenvolvimento de um primeiro aplicativo'> </a> 
+  1. Desenvolvendo o aplicativo pessoa
   
