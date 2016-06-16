@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Bem Vindo
+//  HelloWorld
 //
-//  Created by C1284047 (Edi Vergis) on 6/15/16.
+//  Created by C1284047 (Edi Vergis) on 6/16/16.
 //  Copyright © 2016 Edi Vergis. All rights reserved.
 //
 
@@ -17,10 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blueColor];
+    // Override point for customization after application launch.
     
-    //Quando não passamos o nome do arquivo .xib automaticamente o iOS busca pelo xib com o nome da classe
+        //Quando não passamos o nome do arquivo .xib automaticamente o iOS busca pelo xib com o nome da classe
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         PrimeiroViewController *pv = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController" bundle:nil];
@@ -31,7 +30,6 @@
     }
     
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
