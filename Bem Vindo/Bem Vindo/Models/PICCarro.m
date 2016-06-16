@@ -62,4 +62,28 @@
     NSLog(@"Carro parado");
 }
 
+//parse enum para string
+- (NSString *)tipoCombustivelToString:(TipoCombustivel)combustivel{
+    NSString* stringCombustivel = @"Inv;alido";
+    
+    switch (combustivel) {
+        case TipoCombustivelEtanol:
+            stringCombustivel = @"Etanol";
+            break;
+        case TipoCombustivelGasolina:
+            stringCombustivel = @"Gasolina";
+            break;
+        case TipoCombustivelGNV:
+            stringCombustivel = @"GNV";
+            break;
+        case TipoCombustivelDiesel:
+            stringCombustivel = @"Diesel";
+            break;
+        default:
+            break;
+    }
+    return stringCombustivel;
+}
+
+
 @end
