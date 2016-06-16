@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PrimeiroViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor blueColor];
+    
+    //Quando não passamos o nome do arquivo .xib automaticamente o iOS busca pelo xib com o nome da classe
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        PrimeiroViewController *pv = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController" bundle:nil];
+        self.window.rootViewController = pv;
+    }else{
+        PrimeiroViewController *pv = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController_iPad" bundle:nil];
+        self.window.rootViewController = pv;
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
